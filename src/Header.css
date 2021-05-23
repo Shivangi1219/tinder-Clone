@@ -1,3 +1,5 @@
+/* Object-fit : contain maintains the aspcet ratio of image. 
+align items center aligns everything to cenetr on the horizontal axis */
 .header{
     display: flex;
     align-items: center;
@@ -6,4 +8,8 @@
 .header__logo{
     object-fit: contain;
     height: 40px;
+}
+
+.header__icon{
+    padding: 20px;
 }
