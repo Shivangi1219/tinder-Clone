@@ -17,11 +17,11 @@ function App() {
       <Header />
       <Router>
         <Switch>
-        <Route path="/chat">
+          <Route path="/chat">
             <h1>I am on chatpage</h1>
           </Route>
           <Route path="/">
-            <h1>I am on homepage</h1>
+            <h1><TinderCards /></h1>
           </Route>
           {/* Always have the default route in the bottom*/}
         </Switch>
@@ -30,8 +30,6 @@ function App() {
   );
 }
 
-        {/* 
-        <TinderCards />
         {/* Swipe Buttons */}
         {/* Chat screen*/}
         {/* Individual chat screens*/}
