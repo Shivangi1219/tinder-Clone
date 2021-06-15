@@ -8,6 +8,7 @@ import {
 import "./App.css";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
+import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <h1>I am on chatpage</h1>
           </Route>
           <Route path="/">
-            <h1><TinderCards /></h1>
+            <TinderCards />
+            <SwipeButtons/>
           </Route>
           {/* Always have the default route in the bottom*/}
         </Switch>
