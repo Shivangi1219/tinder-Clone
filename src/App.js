@@ -10,15 +10,21 @@ import Header from "./Header";
 import TinderCards from "./TinderCards";
 import SwipeButtons from "./SwipeButtons";
 import Chats from "./Chats";
+import ChatScreen from './ChatScreen';
 
 function App() {
   return (
     //BEM naming converntion for css classes
     <div className="app">
-      {/* If you want header on every page just put it outside the Switch*/}
+      {/* If you want header on every page just put it outside the Switch, : 
+      any name after person*/}
       
       <Router>
         <Switch>
+          <Route path="/chat/:person">
+            <Header backButton="/chat" />
+            <ChatScreen/>
+          </Route>  
           <Route path="/chat">
             <Header backButton="/" />
             <Chats/>
